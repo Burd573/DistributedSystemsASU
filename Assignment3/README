@@ -6,3 +6,5 @@ gradle runServer −Pport = port.
 
 Run Client with:
 gradle runClient −Pport=port −Phost=hostIP.
+
+Screencast: https://youtu.be/6ZEMpPgIRx8
