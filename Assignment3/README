@@ -1,1 +1,8 @@
+Client-Server game. The client connects to the server via TCP socket and sends the name and number of riddles they think they can answer. The server
+has a JSON array of riddles that it sends to the client. If the client answers the number of riddles in the time provided, they win. If not they lose.
 
+Run server with:
+gradle runServer −Pport = port.
+
+Run Client with:
+gradle runClient −Pport=port −Phost=hostIP.
