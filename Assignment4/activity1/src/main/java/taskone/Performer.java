@@ -31,6 +31,15 @@ public class Performer {
         this.state = strings;
     }
 
+    public JSONObject quit() {
+        JSONObject json = new JSONObject();
+        json.put("datatype", 0);
+        json.put("type", "quit");
+        json.put("data", String.valueOf(this.state.size()));
+        System.out.println("JSON to send: " + json);
+        return json;
+    }
+
     public JSONObject add(String str) {
         JSONObject json = new JSONObject();
         json.put("datatype", 1);
@@ -117,6 +126,9 @@ public class Performer {
    
                 int choice = message.getInt("selected");
                     switch (choice) {
+                        case (0):
+                            returnMessage = quit();
+                            break;
                         case (1):
                             String inStr = (String) message.get("data");
                             returnMessage = add(inStr);
