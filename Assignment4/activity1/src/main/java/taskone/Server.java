@@ -41,17 +41,27 @@ class Server {
         }
         ServerSocket server = new ServerSocket(port);
         System.out.println("Server Started...");
-        while (true) {
-            System.out.println("Accepting a Request...");
-            Socket sock = server.accept();
+        try {
+            while (true) {
+                System.out.println("Accepting a Request...");
+                Socket sock = server.accept();
 
-            Performer performer = new Performer(sock, strings);
-            performer.doPerform();
+                Performer performer = new Performer(sock, strings);
+                performer.doPerform();
+                try {
+                    System.out.println("close socket of client ");
+                    sock.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        } catch (Exception ex) {
+            System.out.println("Client disconnected:");
+        } finally {
             try {
-                System.out.println("close socket of client ");
-                sock.close();
-            } catch (Exception e) {
-                e.printStackTrace();
+                server.close();
+            } catch (Exception ex) {
+                System.out.println("Error while closing client connection...");
             }
         }
     }
