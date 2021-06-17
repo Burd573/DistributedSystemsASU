@@ -157,7 +157,7 @@ class SockBaseServer implements Runnable{
 
         try {
             // just read the file and put what is in it into the logs object
-            return logs.mergeFrom(new FileInputStream("src/main/resources/logs.txt"));
+            return logs.mergeFrom(new FileInputStream("logs.txt"));
         } catch (FileNotFoundException e) {
             System.out.println(logFilename + ": File not found.  Creating a new file.");
             return logs;
@@ -184,7 +184,7 @@ class SockBaseServer implements Runnable{
             logs.addLog(date.toString() + ": " + name + " - " + message);
 
             // open log file
-            FileOutputStream output = new FileOutputStream("src/main/resources/logs.txt");
+            FileOutputStream output = new FileOutputStream("logs.txt");
             Logs logsObj = logs.build();
 
             // This is only to show how you can iterate through a Logs object which is a protobuf object
