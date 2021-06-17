@@ -120,7 +120,7 @@ public class Client {
     public static JSONObject quit() {
         JSONObject request = new JSONObject();
         request.put("selected", 0);
-        request.put("data", ".");
+        request.put("data", "");
         return request;
     }
 
