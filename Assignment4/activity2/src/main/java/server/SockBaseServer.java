@@ -119,6 +119,7 @@ class SockBaseServer implements Runnable{
                             questionData = question.getString("question");
                             answerData = question.getString("answer");
                             System.out.println("Question sent: " + questionData);
+                            System.out.println("Answer expected: " + answerData);
 
                             ProtoUtils.taskResponse(game, "CORRECT!\n" + questionData, out);
                         } else {
