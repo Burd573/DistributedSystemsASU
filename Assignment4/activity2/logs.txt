@@ -1,0 +1,59 @@
+-Thu Jun 17 21:23:29 UTC 2021: chris - CONNECT
++Thu Jun 17 21:24:07 UTC 2021: chris - START
+)Thu Jun 17 21:25:55 UTC 2021: chris - WIN
+-Thu Jun 17 21:36:33 UTC 2021: chris - CONNECT
++Thu Jun 17 21:36:38 UTC 2021: chris - START
++Thu Jun 17 21:37:11 UTC 2021: bob - CONNECT
+)Thu Jun 17 21:37:28 UTC 2021: bob - START
+'Thu Jun 17 21:37:58 UTC 2021: bob - WIN
+)Thu Jun 17 21:38:03 UTC 2021: chris - WIN
+-Thu Jun 17 21:44:58 UTC 2021: chris - CONNECT
+,Thu Jun 17 21:45:17 UTC 2021: jake - CONNECT
++Thu Jun 17 21:46:03 UTC 2021: chris - START
+*Thu Jun 17 21:46:54 UTC 2021: jake - START
+)Thu Jun 17 21:47:16 UTC 2021: chris - WIN
+(Thu Jun 17 21:47:28 UTC 2021: jake - WIN
+*Thu Jun 17 21:48:07 UTC 2021: jake - START
+(Thu Jun 17 21:48:54 UTC 2021: jake - WIN
+/Sun Jun 20 00:38:02 UTC 2021: Rmigaud - CONNECT
+-Sun Jun 20 00:38:10 UTC 2021: Rmigaud - START
++Sun Jun 20 00:44:42 UTC 2021: Rmigaud - WIN
+,Sun Jun 20 01:07:54 UTC 2021: Kyle - CONNECT
+3Sun Jun 20 01:08:45 UTC 2021: Kyle again! - CONNECT
+1Sun Jun 20 01:08:47 UTC 2021: Kyle again! - START
+5Sun Jun 20 01:31:24 UTC 2021: andrew pappas - CONNECT
+3Sun Jun 20 01:31:27 UTC 2021: andrew pappas - START
+1Sun Jun 20 01:33:08 UTC 2021: andrew pappas - WIN
+0Sun Jun 20 04:30:57 UTC 2021: ampappa3 - CONNECT
+.Sun Jun 20 04:31:00 UTC 2021: ampappa3 - START
+,Sun Jun 20 04:32:24 UTC 2021: Ryan - CONNECT
+*Sun Jun 20 04:32:34 UTC 2021: Ryan - START
+(Sun Jun 20 04:32:47 UTC 2021: Ryan - WIN
+*Sun Jun 20 04:32:56 UTC 2021: Ryan - START
+,Sun Jun 20 04:33:36 UTC 2021: ampappa3 - WIN
+.Sun Jun 20 05:06:15 UTC 2021: lezhou - CONNECT
+,Sun Jun 20 05:06:23 UTC 2021: lezhou - START
+0Sun Jun 20 05:24:06 UTC 2021: nparril1 - CONNECT
+.Sun Jun 20 05:25:12 UTC 2021: nparril1 - START
+,Sun Jun 20 05:30:34 UTC 2021: nparril1 - WIN
+.Sun Jun 20 05:30:39 UTC 2021: nparril1 - START
+0Sun Jun 20 05:31:01 UTC 2021: nparril1 - CONNECT
+.Sun Jun 20 05:31:09 UTC 2021: nparril1 - START
+0Sun Jun 20 06:29:45 UTC 2021: nswalke4 - CONNECT
+.Sun Jun 20 06:29:50 UTC 2021: nswalke4 - START
+,Sun Jun 20 06:32:35 UTC 2021: nswalke4 - WIN
+0Sun Jun 20 06:33:20 UTC 2021: nswalke4 - CONNECT
+.Sun Jun 20 06:33:21 UTC 2021: nswalke4 - START
+,Sun Jun 20 06:33:45 UTC 2021: nswalke4 - WIN
+/Sun Jun 20 06:46:52 UTC 2021: grross1 - CONNECT
+-Sun Jun 20 06:47:03 UTC 2021: grross1 - START
+/Sun Jun 20 06:47:36 UTC 2021: grross1 - CONNECT
+-Sun Jun 20 06:47:44 UTC 2021: grross1 - START
+0Sun Jun 20 16:53:20 UTC 2021: rfatula1 - CONNECT
+.Sun Jun 20 16:53:23 UTC 2021: rfatula1 - START
+0Tue Jun 22 12:35:03 UTC 2021: amehlhas - CONNECT
+.Tue Jun 22 12:35:09 UTC 2021: amehlhas - START
+,Tue Jun 22 12:37:35 UTC 2021: amehlhas - WIN
+0Tue Jun 22 12:39:16 UTC 2021: amehlhas - CONNECT
+.Tue Jun 22 12:39:22 UTC 2021: amehlhas - START
+
