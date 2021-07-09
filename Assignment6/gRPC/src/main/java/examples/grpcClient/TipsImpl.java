@@ -42,12 +42,11 @@ class TipsImpl extends TipsGrpc.TipsImplBase {
     public synchronized void write (TipsWriteRequest req, StreamObserver<TipsWriteResponse> responseObserver) {
         TipsWriteResponse.Builder response = TipsWriteResponse.newBuilder();
 
-        if (!req.hasTip()) {
+        if(!req.hasTip()) {
             response.setIsSuccess(false);
-            response.setError("There was an issue adding tip!");
+            response.setError("Could not add tip");
             TipsWriteResponse resp = response.build();
             responseObserver.onNext(resp);
-            responseObserver.onCompleted();
 
         } else {
             Tip newTip = req.getTip();
@@ -56,8 +55,8 @@ class TipsImpl extends TipsGrpc.TipsImplBase {
             response.setIsSuccess(true);
             TipsWriteResponse resp = response.build();
             responseObserver.onNext(resp);
-            responseObserver.onCompleted();
         }
+        responseObserver.onCompleted();
     }
 
 }

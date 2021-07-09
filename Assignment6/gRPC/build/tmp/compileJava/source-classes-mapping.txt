@@ -219,8 +219,10 @@ service/FindServerReq.java
  service.FindServerReq
  service.FindServerReq$1
  service.FindServerReq$Builder
-examples/grpcClient/CalcImpl.java
- example.grpcclient.CalcImpl
+service/CalcRequest.java
+ service.CalcRequest
+ service.CalcRequest$1
+ service.CalcRequest$Builder
 service/PlayersProto.java
  service.PlayersProto
 service/PlayersReadResponse.java
@@ -237,9 +239,10 @@ service/ReadResponse.java
  service.ReadResponse
  service.ReadResponse$1
  service.ReadResponse$Builder
-examples/grpcClient/NodeService.java
- example.grpcclient.NodeService
- example.grpcclient.NodeService$1
+service/TipsWriteResponse.java
+ service.TipsWriteResponse
+ service.TipsWriteResponse$1
+ service.TipsWriteResponse$Builder
 examples/TestJson.java
  test.TestJson
 examples/grpcClient/TeamImpl.java
@@ -277,8 +280,10 @@ service/WriteRequest.java
  service.WriteRequest$Builder
 service/FindServerReqOrBuilder.java
  service.FindServerReqOrBuilder
-examples/grpcClient/TipsImpl.java
- example.grpcclient.TipsImpl
+service/WriteResponse.java
+ service.WriteResponse
+ service.WriteResponse$1
+ service.WriteResponse$Builder
 service/FindServersReq.java
  service.FindServersReq
  service.FindServersReq$1
@@ -336,23 +341,6 @@ service/JokeSetReq.java
 service/Algo.java
  service.Algo
  service.Algo$1
-examples/grpcClient/Node.java
- example.grpcclient.Node
- example.grpcclient.Node$1
-service/TipsReadResponseOrBuilder.java
- service.TipsReadResponseOrBuilder
-service/CalcRequest.java
- service.CalcRequest
- service.CalcRequest$1
- service.CalcRequest$Builder
-service/TipsWriteResponse.java
- service.TipsWriteResponse
- service.TipsWriteResponse$1
- service.TipsWriteResponse$Builder
-service/WriteResponse.java
- service.WriteResponse
- service.WriteResponse$1
- service.WriteResponse$Builder
 service/JokeGrpc.java
  service.JokeGrpc
  service.JokeGrpc$1
@@ -366,5 +354,17 @@ service/JokeGrpc.java
  service.JokeGrpc$JokeMethodDescriptorSupplier
  service.JokeGrpc$JokeStub
  service.JokeGrpc$MethodHandlers
+service/TipsReadResponseOrBuilder.java
+ service.TipsReadResponseOrBuilder
+examples/grpcClient/CalcImpl.java
+ example.grpcclient.CalcImpl
+examples/grpcClient/Node.java
+ example.grpcclient.Node
+ example.grpcclient.Node$1
+examples/grpcClient/TipsImpl.java
+ example.grpcclient.TipsImpl
+examples/grpcClient/NodeService.java
+ example.grpcclient.NodeService
+ example.grpcclient.NodeService$1
 examples/grpcClient/Client.java
  example.grpcclient.Client

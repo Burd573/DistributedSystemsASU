@@ -197,6 +197,10 @@ public class Client {
             System.out.println("Available Services:");
             client.getServices();
 
+            System.out.println("What would you like to do");
+
+
+
 
 
 

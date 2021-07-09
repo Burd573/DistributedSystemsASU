@@ -17,65 +17,56 @@ public class CalcImpl extends CalcGrpc.CalcImplBase{
 
     public void add (CalcRequest req, StreamObserver<CalcResponse> responseObserver) {
         CalcResponse.Builder response = CalcResponse.newBuilder();
-        double answer = 0;
-        List<Double> numbers = req.getNumList();
-        for (Double d : numbers) {
-            answer = answer + d;
+        double val = 0;
+        List<Double> numList = req.getNumList();
+        for (Double d : numList) {
+            val = val + d;
         }
-        response.setSolution(answer);
-
+        response.setSolution(val);
         CalcResponse resp = response.build();
-
-        responseObserver.onNext(resp);
-        responseObserver.onCompleted();
-    }
-
-    public void multiply (CalcRequest req, StreamObserver<CalcResponse> responseObserver) {
-        CalcResponse.Builder response = CalcResponse.newBuilder();
-        double answer = 0;
-        List<Double> numbers = req.getNumList();
-        for (Double d : numbers) {
-            answer = answer * d;
-        }
-        response.setSolution(answer);
-
-        CalcResponse resp = response.build();
-
         responseObserver.onNext(resp);
         responseObserver.onCompleted();
     }
 
     public void subtract (CalcRequest req, StreamObserver<CalcResponse> responseObserver) {
         CalcResponse.Builder response = CalcResponse.newBuilder();
-        double answer = 0;
-        List<Double> numbers = req.getNumList();
-        answer = numbers.get(0);
-        for (int i = 1; i < numbers.size(); i++) {
-            answer = answer - numbers.get(i);
+        double val = 0;
+        List<Double> numList = req.getNumList();
+        val = numList.get(0);
+        for (Double d : numList) {
+            val = val - d;
         }
-        response.setSolution(answer);
-
+        response.setSolution(val);
         CalcResponse resp = response.build();
+        responseObserver.onNext(resp);
+        responseObserver.onCompleted();
+    }
 
+    public void multiply (CalcRequest req, StreamObserver<CalcResponse> responseObserver) {
+        CalcResponse.Builder response = CalcResponse.newBuilder();
+        double val = 0;
+        List<Double> numList = req.getNumList();
+        for (Double d : numList) {
+            val = val * d;
+        }
+        response.setSolution(val);
+        CalcResponse resp = response.build();
         responseObserver.onNext(resp);
         responseObserver.onCompleted();
     }
 
     public void divide (CalcRequest req, StreamObserver<CalcResponse> responseObserver) {
         CalcResponse.Builder response = CalcResponse.newBuilder();
-        double answer = 0;
-        List<Double> numbers = req.getNumList();
-        answer = numbers.get(0);
+        double val = 0;
+        List<Double> numList = req.getNumList();
+        val = numList.get(0);
         double denom = 0;
-        for (int i = 1; i < numbers.size(); i++) {
-            denom = denom + numbers.get(i);
+        for (Double d : numList) {
+            denom = denom + d;
         }
-        answer = answer / denom;
-
-        response.setSolution(answer);
-
+        val = val / denom;
+        response.setSolution(val);
         CalcResponse resp = response.build();
-
         responseObserver.onNext(resp);
         responseObserver.onCompleted();
     }
