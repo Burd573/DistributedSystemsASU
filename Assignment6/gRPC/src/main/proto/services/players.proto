@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "service";
+option java_outer_classname = "PlayersProto";
+
+package services;
+import "services/story.proto";
+
+service Players {
+  rpc read (Empty) returns (PlayersReadResponse) {}
+  rpc write (PlayerWriteRequest) returns (PlayerWriteResponse) {}
+}
+
+
+
+message Player {
+    string name = 1;
+    int32 num = 2;
+    string pos = 3;
+}
+
+
+message PlayersReadResponse {
+  bool isSuccess = 1;
+  repeated Player player = 2; // all the tips peers entered so far
+  string error = 3; // Error message, a String of your choice to show what went wrong if an error occured
+}
+
+message PlayerWriteRequest {
+  Player player = 1;
+}
+
+message PlayerWriteResponse {
+  bool isSuccess = 1;
+  string error = 3; // Error message
+}

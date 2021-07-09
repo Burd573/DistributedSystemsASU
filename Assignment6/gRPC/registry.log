@@ -1,0 +1,60 @@
+Nov 23, 2020 10:58:02 AM registry.Logging logging
+INFO: New service registered: hello you localhost:8000
+Nov 23, 2020 6:39:30 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Nov 23, 2020 6:42:25 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Nov 23, 2020 6:46:28 PM registry.Logging logging
+INFO: New service registered: amehlhase localhost:10000
+Nov 23, 2020 8:42:01 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Dec 10, 2020 10:21:51 AM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Dec 10, 2020 10:26:34 AM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Dec 10, 2020 10:35:36 AM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Dec 10, 2020 10:56:54 AM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Dec 10, 2020 10:59:31 AM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Dec 10, 2020 11:01:30 AM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 04, 2021 1:07:04 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 04, 2021 1:17:19 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 04, 2021 1:31:04 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 04, 2021 2:02:33 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 04, 2021 2:28:08 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 04, 2021 3:15:57 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 04, 2021 3:27:14 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 05, 2021 3:42:04 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 05, 2021 6:10:12 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 05, 2021 6:42:17 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 05, 2021 8:49:06 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 05, 2021 8:49:25 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 05, 2021 8:50:01 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 05, 2021 9:09:30 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 05, 2021 9:15:53 PM registry.Logging logging
+INFO: New service registered: test localhost:8001
+Jul 05, 2021 9:16:14 PM registry.Logging logging
+INFO: New service registered: test localhost:8001
+Jul 05, 2021 9:16:23 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 08, 2021 11:12:02 AM registry.Logging logging
+INFO: New service registered: test localhost:8001
+Jul 08, 2021 11:12:20 AM registry.Logging logging
+INFO: New service registered: test localhost:8000
