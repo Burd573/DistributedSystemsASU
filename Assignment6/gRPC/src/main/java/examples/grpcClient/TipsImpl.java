@@ -50,7 +50,7 @@ class TipsImpl extends TipsGrpc.TipsImplBase {
 
         } else {
             Tip newTip = req.getTip();
-            System.out.println("New tip from " + newTip.getName() + ": " + newTip.getTip());
+            System.out.println("Received from client " + newTip.getName() + ": " + newTip.getTip());
             tips.add(newTip);
             response.setIsSuccess(true);
             TipsWriteResponse resp = response.build();

@@ -60,3 +60,7 @@ Jul 08, 2021 11:12:20 AM registry.Logging logging
 INFO: New service registered: test localhost:8000
 Jul 09, 2021 2:15:56 PM registry.Logging logging
 INFO: New service registered: test localhost:8001
+Jul 09, 2021 3:43:36 PM registry.Logging logging
+INFO: New service registered: test localhost:8000
+Jul 09, 2021 3:43:52 PM registry.Logging logging
+INFO: New service registered: test localhost:8000

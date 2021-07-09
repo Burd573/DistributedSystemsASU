@@ -51,7 +51,7 @@ public class TeamImpl extends PlayersGrpc.PlayersImplBase {
 
         } else {
             Player newPlayer = req.getPlayer();
-            System.out.println("New player: " + newPlayer.getName() + ": " + newPlayer.getNum() + ", " + newPlayer.getPos());
+            System.out.println("Received from client: " + newPlayer.getName() + ": " + newPlayer.getNum() + ", " + newPlayer.getPos());
             players.add(newPlayer);
             response.setIsSuccess(true);
             PlayerWriteResponse resp = response.build();

@@ -19,8 +19,13 @@ public class CalcImpl extends CalcGrpc.CalcImplBase{
         CalcResponse.Builder response = CalcResponse.newBuilder();
         double val = 0;
         List<Double> numList = req.getNumList();
+        String nums = "";
+        for(Double d : numList) {
+            nums += d + ", ";
+        }
+        System.out.println("Recieved from client: " + nums);
         for (Double d : numList) {
-            val = val + d;
+            val += d;
         }
         response.setSolution(val);
         CalcResponse resp = response.build();
@@ -32,9 +37,14 @@ public class CalcImpl extends CalcGrpc.CalcImplBase{
         CalcResponse.Builder response = CalcResponse.newBuilder();
         double val = 0;
         List<Double> numList = req.getNumList();
+        String nums = "";
+        for(Double d : numList) {
+            nums += d + ", ";
+        }
+        System.out.println("Recieved from client: " + nums);
         val = numList.get(0);
         for (Double d : numList) {
-            val = val - d;
+            val -= d;
         }
         response.setSolution(val);
         CalcResponse resp = response.build();
@@ -44,10 +54,15 @@ public class CalcImpl extends CalcGrpc.CalcImplBase{
 
     public void multiply (CalcRequest req, StreamObserver<CalcResponse> responseObserver) {
         CalcResponse.Builder response = CalcResponse.newBuilder();
-        double val = 0;
+        double val = 1;
         List<Double> numList = req.getNumList();
+        String nums = "";
+        for(Double d : numList) {
+            nums += d + ", ";
+        }
+        System.out.println("Recieved from client: " + nums);
         for (Double d : numList) {
-            val = val * d;
+            val *= d;
         }
         response.setSolution(val);
         CalcResponse resp = response.build();
@@ -59,12 +74,17 @@ public class CalcImpl extends CalcGrpc.CalcImplBase{
         CalcResponse.Builder response = CalcResponse.newBuilder();
         double val = 0;
         List<Double> numList = req.getNumList();
+        String nums = "";
+        for(Double d : numList) {
+            nums += d + ", ";
+        }
+        System.out.println("Recieved from client: " + nums);
         val = numList.get(0);
         double denom = 0;
         for (Double d : numList) {
             denom = denom + d;
         }
-        val = val / denom;
+        val /= denom;
         response.setSolution(val);
         CalcResponse resp = response.build();
         responseObserver.onNext(resp);
