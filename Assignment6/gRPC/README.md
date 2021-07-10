@@ -1,3 +1,25 @@
+###Screencast: https://youtu.be/kwmwQ7vxjUM
+
+###New Service: 
+    Add members to a team. Team members have a name, number and a position
+    Read Team members
+
+###Tasks completed
+- Able to run service node though "gradle runNode"
+- Implemented 2/4 service nodes
+    - calc implemented
+    - tips implemented
+    
+- Client lets user decide what they want to do
+- Server and client do not crash
+- Created NodeService.java
+- Created Client.java
+- NodeService connects to registry
+- Client can view available services
+
+
+
+
 # GRPC Services and Registry
 
 The following folder contains a Registry.jar which includes a Registering service where Nodes can register to allow clients to find them and use their implemented GRPC services. 
@@ -25,3 +47,6 @@ Registers the protobuf nodes from runDiscovery and do some calls.
 
 ### gradle testJSONRegistration
 Registers the json nodes from runDiscovery and do some calls. 
+
+
+
